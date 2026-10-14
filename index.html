@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Erica Nayla Matondang</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        /* Reset & Font Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a {
+            color: #800020;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigasi */
+        header {
+            border-bottom: 1px solid #f2d6dc;
+            padding: 15px 0;
+            background-color: #fdf5f6;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #580016;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: #495057;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover {
+            color: #800020;
+        }
+
+        /* Header Profil / Hero */
+        #profile-header {
+            padding: 40px 0;
+            border-bottom: 1px solid #f2d6dc;
+            background-color: #fdf5f6;
+        }
+
+        .profile-flex {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        /* Styling Foto Profil Ringkas */
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #d99bb1;
+            flex-shrink: 0;
+        }
+
+        .profile-info h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            color: #580016;
+        }
+
+        .profile-info p {
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #800020;
+            color: #ffffff;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .btn:hover {
+            background-color: #580016;
+            text-decoration: none;
+        }
+
+        /* Section Umum */
+        section {
+            padding: 30px 0;
+            border-bottom: 1px solid #f2efef;
+        }
+
+        section h2 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            color: #580016;
+            border-left: 4px solid #800020;
+            padding-left: 10px;
+        }
+
+        /* Styling Keterampilan (Skills) dengan nuansa burgandi */
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .skill-box {
+            border: 1px solid #f2d6dc;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #fdf5f6;
+        }
+
+        .skill-box h3 {
+            font-size: 0.95rem;
+            color: #580016;
+            margin-bottom: 10px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: #ffffff;
+            border: 1px solid #d99bb1;
+            color: #800020;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        /* Card / Kotak Konten Sederhana */
+        .card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            border: 1px solid #f2d6dc;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #fdf5f6;
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: #580016;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #4a5568;
+        }
+
+        /* Timeline Pendidikan */
+        .education-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .edu-item {
+            border-left: 3px solid #800020;
+            padding-left: 12px;
+        }
+
+        .edu-school {
+            font-weight: bold;
+            color: #580016;
+            font-size: 0.95rem;
+        }
+
+        .edu-desc {
+            font-size: 0.85rem;
+            color: #666666;
+        }
+
+        /* Tampilan Daftar */
+        ul.simple-list {
+            margin-left: 20px;
+            font-size: 0.95rem;
+        }
+
+        ul.simple-list li {
+            margin-bottom: 6px;
+            color: #4a5568;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6c757d;
+            background-color: #fdf5f6;
+            border-top: 1px solid #f2d6dc;
+        }
+
+        /* Responsif HP */
+        @media (max-width: 550px) {
+            .profile-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+        }
+    </style> -->
+</head>
+<body>
+
+    <!-- Navigasi Atas -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Erica Nayla Matondang</div>
+                <ul class="nav-links">
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#education">Pendidikan</a></li>
+                    <li><a href="#skills">Keahlian</a></li>
+                    <li><a href="#projects">Proyek</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header Profil (Foto + Nama) -->
+    <section id="profile-header">
+        <div class="container">
+            <div class="profile-flex">
+                <!-- GANTI foto-profil.jpg DENGAN NAMA FILE FOTO ANDA -->
+                <img src="erica.jpeg" alt="Foto Profil Erica Nayla Matondang" class="profile-photo">
+                <div class="profile-info">
+                    <h1>Erica Nayla Matondang</h1>
+                    <p>Mahasiswa D3 Manajemen Informatika &amp; Pengembang Web Pemula</p>
+                    <a href="#contact" class="btn">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Saya Erica Nayla Matondang, mahasiswi D3 Manajemen Informatika di Politeknik Negeri Medan. Saya memiliki minat besar dalam pengembangan antarmuka web statis, perancangan diagram alur sistem (flowchart), serta analisis tata kelola teknologi informasi.</p>
+        </div>
+    </section>
+
+    <!-- Pendidikan -->
+    <section id="education">
+        <div class="container">
+            <h2>Riwayat Pendidikan</h2>
+            <div class="education-list">
+                <div class="edu-item">
+                    <div class="edu-school">D3 Manajemen Informatika</div>
+                    <div class="edu-desc">Politeknik Negeri Medan</div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-school">SMA Swasta HKBP 1 Tarutung</div>
+                    <div class="edu-desc">Sekolah Menengah Atas</div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-school">SMP Swasta Santa Maria Tarutung</div>
+                    <div class="edu-desc">Sekolah Menengah Pertama</div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-school">SD 174566 Hutabarat Partali Julu</div>
+                    <div class="edu-desc">Sekolah Dasar</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian / Keterampilan -->
+    <section id="skills">
+        <div class="container">
+            <h2>Keahlian</h2>
+            <div class="skills-container">
+                <div class="skill-box">
+                    <h3>Pemrograman &amp; Web</h3>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Dasar JavaScript</span>
+                        <span class="tag">Desain Responsif</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Analisis &amp; Tools</h3>
+                    <div class="tags">
+                        <span class="tag">Pemodelan Flowchart</span>
+                        <span class="tag">Git &amp; GitHub</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Analisis Sistem</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <h3>Kemampuan Diri (Soft Skills)</h3>
+                    <div class="tags">
+                        <span class="tag">Pemecahan Masalah</span>
+                        <span class="tag">Kerja Sama Tim</span>
+                        <span class="tag">Komunikasi</span>
+                        <span class="tag">Manajemen Waktu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek -->
+    <section id="projects">
+        <div class="container">
+            <h2>Proyek Pilihan</h2>
+            <div class="card-list">
+                <div class="card">
+                    <h3>Portofolio Personal Statis</h3>
+                    <p>Website portofolio pribadi berbasis HTML5 dan CSS3 murni dengan tema burgandi.</p>
+                </div>
+                <div class="card">
+                    <h3>Analisis Etika Startup Digital</h3>
+                    <p>Studi kasus tata kelola dan analisis etika pada bisnis/startup lokal di Indonesia.</p>
+                </div>
+                <div class="card">
+                    <h3>Diagram Alur Sistem (Flowchart)</h3>
+                    <p>Perancangan peta alur proses bisnis dan alur logika sistem informasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak</h2>
+            <p>Silakan hubungi saya melalui jalur berikut:</p>
+            <ul class="simple-list" style="margin-top: 8px;">
+                <li>WhatsApp: <a href="https://wa.me/6282163539831" target="_blank">0821-6353-9831</a></li>
+                <li>Email: <a href="mailto:rikamatondang2020@gmail.com">rikamatondang2020@gmail.com</a></li>
+                <li>Instagram: <a href="https://instagram.com/ericaanayla" target="_blank">@ericaanayla</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Erica Nayla Matondang. Dibuat dengan HTML5 &amp; CSS3.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
